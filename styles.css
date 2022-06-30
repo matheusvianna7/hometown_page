@@ -40,6 +40,12 @@ body {
     text-shadow: 0px 0px 2px black;
 }
 
+@media (max-width: 700px){
+    #subtitle{
+        width: 80%;
+    }
+}
+
 #activities{
     background-color: #DED6CBff;
     margin-top: 0;
@@ -54,11 +60,13 @@ body {
 
 #act-cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 .cards{
-    width: 200px;
+    width: 32%;
 }
 
 .img-act {
@@ -67,20 +75,25 @@ body {
     border-radius: 100%;
 }
 
-#img-guide{
-    width: 180px;
-}
-
 #guide-card{
     width: 400px;
     margin: 50px auto;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #235A7Eff;
     color: #DED6CBff;
     border-radius: 10px;
     box-shadow: 8px 8px 1px #73A3C7ff;
+}
+
+#img-guide{
+    width: 45%;
+    object-fit: cover;
+}
+
+#guide-text{
+    width: 45%;
 }
 
 .italic{
